@@ -1,0 +1,133 @@
+*
+    font-family: 'Bebas', sans-serif
+    box-sizing: border-box
+    user-select: none
+
+.main
+    display: block 
+    padding: 24px 12px
+    margin: 99px auto 0  
+    width: 475px 
+    height: 534px 
+    background-color: #fdfdfd
+    border: 12px solid #EBEBEB
+.license
+    &_choice
+        position: relative
+        display: flex
+        padding: 12px 
+        width: 100%
+        cursor: pointer
+        input
+            display: none
+        span
+            position: relative
+            display: inline-block
+            width: 24px
+            height: 24px
+            background: #F5F5F5
+            border-radius: 50%
+            border: 4px solid #EBEBEB
+        input:checked + span
+            border: 4px solid #34648E
+        input:checked + span > 
+        input:checked + span::before
+            content: ''
+            position: absolute
+            left: 3px
+            top: 3px
+            background: #0294BF
+            width: 10px 
+            height: 10px
+            border-radius: 50%
+    &_title
+        position: absolute 
+        left: 48px
+        font-size: 18px
+        font-weight: 900
+        color: #787878
+        text-transform: uppercase
+    &_description
+        position: absolute
+        right: 12px
+        font-weight: 400
+        color: #787878
+    &_divider 
+        display: block
+        width: 427px
+        height: 1px 
+        background-color: #CCCCCC
+        margin-top: 15px
+        &_second
+            margin-top: 25px
+    &_number 
+        display: flex
+        justify-content: center 
+        margin-top: 25px
+        color: #424242
+        cursor: default
+    &_text
+        line-height: 32px
+        font-weight: 700
+    &_list
+        width: 60px
+        height: 33px
+        border: 2px solid #8BADE4
+        border-radius: 4px
+        margin-left: 9px
+        outline: none
+        font-weight: 700
+        cursor: pointer
+    &_price
+        display: flex
+        justify-content: center
+        margin-top: 30px
+        font-weight: 900
+        font-size: 27px
+        color: #787878
+        cursor: default
+        text-transform: uppercase
+        .money 
+            display: flex
+            margin-left: 3px
+            color: #3388A8
+            .index
+                font-size: 15px
+                line-height: 32px
+    &_btn
+        button 
+            display: block
+            width: 186px
+            height: 52px
+            background-color: #33A845
+            margin: 15px auto 0
+            border-radius: 29px
+            border: none
+            text-transform: uppercase
+            font-weight: 700
+            color: #ffffff
+            font-size: 19px
+            outline: none
+            transition: .5s all
+            &:hover 
+                background-color: #2b8539
+
+    &_selected
+        display: block
+        margin-top: 39px
+        text-align: center
+        .value 
+            color: #ff0000
+        a
+            text-decoration: none
+            color: #3388A8
+            font-weight: 700
+            font-size: 20px
+            transition: .2s all
+            &:hover
+                color: #1b576d 
+.license_choice:hover
+    border: 2px solid #B8D7E2
+    background-color: #EBF4F7
+
+
