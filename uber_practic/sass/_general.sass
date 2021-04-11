@@ -1,0 +1,407 @@
+@import "mixins"
+@import "variables"
+a:link 
+    text-decoration: none
+a:focus
+    outline: none
+button:focus
+    outline: none
+header
+    position: relative 
+    height: 50px
+nav 
+    position: fixed
+    width: 100%
+    height: 50px
+    background-color: #212121
+    z-index: 3
+.menu 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 70px 10px 70px   
+    list-style-type: none
+    line-height: 28px
+    &_items
+        border-right: 2px dotted black 
+        padding-right: 35px 
+        &:nth-child(6)
+            border: none
+    &_link 
+        font-size: 15px;
+        font-weight: 300;
+        color: $color_white;
+        transition: .2s all
+        &:hover
+            color: #9C9C9C
+.subheader
+    position: absolute
+    top: 50px
+    width: 100%
+    height: 84px
+    background-color: rgba(0, 0, 0, .6)
+    &_logo
+        display: block
+        margin-top: 16px
+    &_official 
+        font-size: 13px;
+        font-weight: 100;
+        color: $color_white
+        opacity: 0.5;
+        line-height: 18px
+    &_call
+        margin-top: 16px
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 300;
+        color: $color_white
+        text-align-last: right 
+    &_phone
+        display: block
+        font-size: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $color_white
+        transition: .2s all
+        text-align: right 
+        &:hover
+            color: #9C9C9C
+    &_btn
+        margin-top: 16px
+        min-width: 178px;
+        height: 52px;
+        background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+        border: none
+        border-radius: 6px
+        box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.11);
+        box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.2);
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $color_white
+        &:hover
+            background-image: none
+            background-color: #3295A8
+            font-size: 15px
+            color: $color_white
+.promo 
+    height: 799px 
+    background: url('../img/bg/main_bg.jpg') $bg_scale
+    padding-top: 151px
+    &_title
+        margin: 0 
+        font-size: 60px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color_white
+        text-align: center
+    &_subtitle
+        margin: 0
+        font-size: 36px;
+        line-height: 48px;
+        font-weight: 700;
+        color: $color_white
+        text-align: center
+    &_description
+        margin-top: 23px
+        font-size: 18px;
+        font-weight: 400;
+        color: $color_white
+        text-align: center
+    &_btn 
+        display: block
+        margin: 0 auto
+        margin-top: 115px 
+        width: 265px;
+        height: 69px;
+        background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+        border: none
+        border-radius: 6px
+        box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.11);
+        box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.2);
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $color_white
+        &:hover
+            background-image: none
+            background-color: #3295A8
+            font-size: 19px
+            color: $color_white
+.label 
+    position: relative
+    display: block
+    margin: 0 auto
+    padding: 4px
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    font-size: 11px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center
+    color: $color_white
+    z-index: 2
+    &_white
+        background-color: $color_white
+        color: #000000
+.title
+    position: relative
+    margin: 0 
+    margin-top: 38px
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    text-align: center
+    z-index: 2
+    &_white
+        color: $color_white
+.subtitle
+    position: relative
+    font-size: 17px;
+    font-weight: 400;
+    color: #222222;
+    text-align: center
+    z-index: 2
+    &_white
+        color: $color_white
+.reasons
+    padding: 71px 0 65px 0
+    &_block 
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 40px
+    &_round
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 113px;
+        height: 113px;
+        background-color: #1eacc7;
+        border-radius: 100%
+        margin-right: 26px
+    &_description 
+        width: 341px
+    &_subtitle 
+        font-size: 17px;
+        font-weight: 400;
+        color: #1eacc7;
+    &_text 
+        font-size: 15px;
+        font-weight: 300;
+        color: #202020;
+.mobile
+    height: 864px;
+    background: url('../img/bg/mobile_app.png') $bg_scale
+    padding: 48px 0 80px 0
+    &_block
+        margin-top: 13px
+    &_box 
+        width: 320px;
+        height: 280px;
+        position: relative
+        margin: 0 auto 
+        margin-top: 13px
+        padding-top: 91px
+
+        &_item1
+            background: url('../img/bg/mobile_screen_1.jpg') $bg_scale 
+        &_item2
+            background: url('../img/bg/mobile_screen_2.jpg') $bg_scale
+        &_item3
+            background: url('../img/bg/mobile_screen_3.jpg') $bg_scale
+        &_item4
+            background: url('../img/bg/mobile_screen_4.jpg') $bg_scale
+        &_item5
+            background: url('../img/bg/mobile_screen_5.jpg') $bg_scale
+        &_item6
+            background: url('../img/bg/mobile_screen_6.jpg') $bg_scale
+    &_description
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $color_white
+        text-align: center
+    &_round
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        width: 26px;
+        height: 26px;
+        background-color: #000000;
+        border-radius: 100%
+        bottom: 35px
+        left: 50%
+        transform: translateX(-50%) 
+        cursor: pointer
+        margin: 0 auto
+        &:hover 
+            width: 28px;
+            height: 28px;            
+        &::before
+            content: ''
+            width: 14px;
+            height: 2px;
+            background-color: #1eacc7;
+        &::after
+            position: absolute
+            content: ''
+            width: 2px;
+            height: 14px;
+            left: 50%
+            transform: translateX(-50%)
+            background-color: #1eacc7;
+        &:hover
+            &:before , &:after 
+                background-color: #fff
+                transition: .2s all
+.choice
+    position: relative
+    padding: 57px 0 138px 0
+    height: 895px
+    background: url('../img/bg/mobile_app.png') $bg_scale
+    .black  
+        position: absolute
+        width: 100%
+        height: 499px
+        left: 0 
+        top: 0 
+        background-color: #070716
+        z-index: 1
+    &_img
+        position: relative
+        display: block
+        margin: 56px auto 0 auto
+        z-index: 2
+    &_description
+        font-size: 17px;
+        font-weight: 300;
+        color: #222222;
+        text-align: center
+.require 
+    padding: 68px 0 55px 0
+    &_block 
+        margin: 33px 0 29px 0
+    &_title
+        font-size: 22px;
+        font-weight: 400;
+        color: $color_ocean_1
+    &_description
+        font-size: 17px;
+        font-weight: 300;
+        color: $color_ocean_1
+    &_list 
+        list-style-type: none 
+        li
+            position: relative
+            margin-top: 5px
+            font-size: 17px;
+            font-weight: 300;
+            color: #222222;
+            &::before 
+                content: ''
+                position: absolute
+                left: -32px
+                top: 3px
+                display: block
+                width: 21px;
+                height: 20px;
+                background: url('../icons/check_blue.png') $bg_scale
+    &_warning
+        .require_title
+            color: red
+        .require_list
+            li 
+                &::before
+                    content: ''
+                    background: url('../icons/check_red.png') $bg_scale
+.world
+    position: relative 
+    padding: 49px 0
+    min-height: 717px;
+    background: url('../img/bg/map.jpg') $bg_scale
+    &_link
+        display: block
+        position: absolute 
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $color_ocean
+        bottom: 49px
+        left: 50%
+        transform: translateX(-50%)
+        transition: .2s all
+        &:hover 
+            color: $color_white
+footer 
+	padding: 14px 23px 39px 23px
+	a 
+		&:hover 
+			text-decoration: none
+.footer
+	&_divider
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		margin: 0 auto
+	&_wrapper
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+	&_social
+		width: 160px
+		display: flex
+		justify-content: space-between
+		&_item 
+			display: flex 
+			justify-content: center
+			align-items: center
+			margin: 0 4px 
+			width: 32px
+			height: 32px
+			background-color: #070716
+			border-radius: 100%
+			i 
+				color: #fff
+	&_links
+		width: 390px
+		margin: 0 auto
+		&_main 
+			display: flex 
+			justify-content: space-between
+			padding: 0 10px
+			a 
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+		&_sub 
+			display: flex 
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+		&_lang 
+			display: block 
+			margin: 0 auto
+			color: #1fbad6
+			font-size: 11px
+			font-weight: 400
+			margin-top: 19px
+			text-transform: uppercase
+			text-align: center
+.xs-visible 
+    display: none
